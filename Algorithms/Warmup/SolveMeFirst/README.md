@@ -8,11 +8,12 @@ int solveMeFirst(int a, int b);
 
 where,
 
-a is the first integer input.
-b is the second integer input
-Return values
+* a is the first integer input.
+* b is the second integer input
 
-sum of the above two integers
+### Return values
+
+* sum of the above two integers
 
 ### Sample Input
 
