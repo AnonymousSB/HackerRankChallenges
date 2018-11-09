@@ -1,9 +1,12 @@
-function compareTriplets(a, b) {
+function compareTriplets(a, b)
+{
     const score = [0,0];
+
     a.map((mark, i) => {
         if(mark > b[i]) score[0]++;
         if(mark < b[i]) score[1]++;
     });
+
     return score;
 }
 
