@@ -10,5 +10,5 @@ function compareTriplets(a, b)
     return score;
 }
 
-compareTriplets([5, 6, 7], [3, 6, 10]);
-compareTriplets([17, 28, 30], [99, 16, 8]);
+compareTriplets([5, 6, 7], [3, 6, 10]); // [1, 1]
+compareTriplets([17, 28, 30], [99, 16, 8]); // [2, 1]
