@@ -15,9 +15,9 @@ Complete the function `rotLeft` in the editor below. It should return the result
 
 ### Input Format
 
-The first line contains two space-separated integers  and , the size of  and the number of left rotations you must perform.
+The first line contains two space-separated integers _n_ and _d_, the size of  and the number of left rotations you must perform.
  
-The second line contains  space-separated integers .
+The second line contains _n_ space-separated integers _a_[_i_].
 
 ### Constraints
 
