@@ -42,7 +42,7 @@ Print an integer denoting the minimum number of bribes needed to get the queue i
 2 1 5 3 4
 ```
 
-###Sample Output
+### Sample Output
 ```
 3
 ```
