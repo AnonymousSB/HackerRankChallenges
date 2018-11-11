@@ -1,6 +1,5 @@
 function arrayManipulation(n, queries)
 {
-    let max = 0;
     const data = new Array(n).fill(0);
     queries.map(query =>
     {
@@ -16,10 +15,7 @@ function arrayManipulation(n, queries)
         }
         data.splice(start, deleteCount, ...slice);
     });
-    for (let k = 0; k < data.length; k++) {
-        max = Math.max(max, data[k]);
-    }
-    return max;
+    return Math.max(...data)
 }
 
 arrayManipulation(5, [[1, 2, 100], [2, 5, 100], [3, 4, 100]]);
