@@ -19,12 +19,9 @@ function arrayManipulation(n, queries)
     for (let j = 1; j < n; j++)
     {
         data[j] += data[j-1];
+        max = Math.max(max, data[j]);
     }
 
-    for (let k = 0; k < data.length; k++)
-    {
-        max = Math.max(max, data[k]);
-    }
     return max;
 }
 
