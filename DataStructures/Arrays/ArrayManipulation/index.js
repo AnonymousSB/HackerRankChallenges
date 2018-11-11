@@ -11,16 +11,23 @@ function arrayManipulation(n, queries)
 
         data[start] += summand;
 
-        if (end < data.length) {
+        if (end < data.length)
+        {
             data[end] -= summand;
         }
     });
 
-    for (let j = 1; j < n; j++)
+    data.reduce((previous, current) =>
     {
-        data[j] += data[j-1];
-        max = Math.max(max, data[j]);
-    }
+        const sum = previous + current;
+
+        if (sum > max)
+        {
+            max = sum;
+        }
+
+        return sum;
+    });
 
     return max;
 }
