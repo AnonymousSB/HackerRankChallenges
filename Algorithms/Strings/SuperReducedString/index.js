@@ -6,7 +6,7 @@ function superReducedString(s)
     }
     while ((s.match(/([a-z])\1/g) || []).length);
 
-    return s ? s : 'Empty String'
+    return s ? s : 'Empty String';
 }
 
 superReducedString('aaabccddd');
