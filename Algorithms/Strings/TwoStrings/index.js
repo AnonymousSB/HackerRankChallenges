@@ -1,6 +1,17 @@
 function twoStrings(s1, s2)
 {
-    const contains = s1.split('').some(v => s2.includes(v));
+    let contains = false;
+    const word = s1.split('');
+
+    for (let i = 0; i < word.length; i++)
+    {
+        if(s2.includes(word[i]))
+        {
+            contains = true;
+            break;
+        }
+    }
+
     return contains ? 'YES' : 'NO';
 }
 
