@@ -1,10 +1,9 @@
 function superReducedString(s)
 {
-    do
+    while ((s.match(/([a-z])\1/g) || []).length)
     {
         s = s.replace(/([a-z])\1/g, '');
     }
-    while ((s.match(/([a-z])\1/g) || []).length);
 
     return s ? s : 'Empty String';
 }
