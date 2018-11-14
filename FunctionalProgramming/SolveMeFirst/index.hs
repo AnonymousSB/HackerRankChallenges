@@ -1,0 +1,1 @@
+solveMeFirst a b = a + b
