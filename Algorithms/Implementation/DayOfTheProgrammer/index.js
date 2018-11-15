@@ -18,8 +18,6 @@ function dayOfProgrammer(year)
         day = 13;
     }
 
-    console.log(`${day}.09.${year}`);
-
     return `${day}.09.${year}`;
 }
 
