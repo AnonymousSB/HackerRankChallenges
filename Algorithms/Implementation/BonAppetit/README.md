@@ -33,29 +33,29 @@ Complete the `bonAppetit` function in the editor below. It should print `Bon App
 If Brian did not overcharge Anna, print `Bon Appetit` on a new line; otherwise, print the difference (i.e., _b_<sub>_charged_</sub> - _b_<sub>_actual_</sub>) that Brian must refund to Anna. This will always be an integer.
 
 ### Sample Input 0
-
+```
 4 1
 3 10 2 9
 12
-
+```
 ### Sample Output 0
-
+```
 5
-
+```
 ### Explanation 0
  
 Anna didn't eat item _bill_[1] = 10, but she shared the rest of the items with Brian. The total cost of the shared items is 3 + 2 + 9 = 14 and, split in half, the cost per person is _b_<sub>_actual_</sub> = 7. Brian charged her _b_<sub>_charged_</sub> = 12 for her portion of the bill. We print the amount Anna was overcharged, _b_<sub>_charged_</sub> - _b_<sub>_actual_</sub> = 12 - 7 = 5, on a new line.
 
 ### Sample Input 1
-
+```
 4 1
 3 10 2 9
 7
-
+```
 ### Sample Output 1
-
+```
 Bon Appetit
-
+```
 ### Explanation 1
  
 Anna didn't eat item _bill_[1] = 10, but she shared the rest of the items with Brian. The total cost of the shared items is 3 + 2 + 9 = 14 and, split in half, the cost per person is _b_<sub>_actual_</sub> = 7. Because _b_<sub>_charged_</sub> = 7, we print `Bon Appetit` on a new line.
