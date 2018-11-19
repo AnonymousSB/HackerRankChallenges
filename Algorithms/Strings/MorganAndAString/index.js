@@ -2,23 +2,26 @@ function morganAndString(a, b)
 {
     a += '~';
     b += '~';
-    let answer = '';
+
+    let result = '';
     let i = 0;
     let j = 0;
+
     while (a[i] !== '~' || b[j] !== '~')
     {
         if (a[i] !== '~' && a.slice(i, a.length) < b.slice(j, b.length))
         {
-            answer += a[i];
+            result += a[i];
             i++;
         }
         else
         {
-            answer += b[j];
+            result += b[j];
             j++;
         }
     }
-    return answer;
+
+    return result;
 }
 
 morganAndString('JACK', 'DANIEL');
