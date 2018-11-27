@@ -1,5 +1,6 @@
 function caesarCipher(s, k) {
     let result = '';
+
     for (let i = 0; i < s.length; i++) {
         const charCode = s.charCodeAt(i);
 
@@ -10,12 +11,14 @@ function caesarCipher(s, k) {
             result += s[i];
         } else {
             let newCharCode = charCode + Math.ceil(k % 26);
+
             if (charCode >= 97 && newCharCode > 122) {
                 newCharCode = newCharCode - 122 + 96;
             }
             if (charCode <= 90 && newCharCode > 90) {
                 newCharCode = newCharCode - 90 + 64;
             }
+
             result += String.fromCharCode(newCharCode);
         }
 
