@@ -1,15 +1,18 @@
 function migratoryBirds(arr) {
-    const results = new Array(5).fill(0);
-    const groups = arr.reduce((birds, bird) => {
-        if (birds[bird]) {
-            birds[bird]++
-        } else {
-            birds[bird] = 1
-        }
-        return birds;
-    }, results);
+    let max = 1;
+    const results = new Array(6).fill(0);
 
-    return groups.indexOf(Math.max(...groups));
+    for (let i = 0; i < arr.length; i++) {
+        results[arr[i]]++;
+    }
+
+    for (let i = 2; i < 6; i++) {
+        if (results[i] > results[max]) {
+            max = i;
+        }
+    }
+
+    return max;
 }
 
 migratoryBirds([1, 4, 4, 4, 5, 3]);
